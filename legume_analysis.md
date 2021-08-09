@@ -1,13 +1,13 @@
 Legume Analysis
 ================
 Chu Ngwoke
-09/08/2021
+25/06/2019
 
 This is an analysis of a dataset of variables (% colonization, Spore
 density and soil properties) for 11 species of legumes in two different
 provinces in South Africa - Guatent and Mpumalanga. Analysis is
-conducted by Chu Ngwoke on this day 25th June, 2018. R version 4.0.0 is
-used for this analysis.
+conducted by Chu Ngwoke on 25th June, 2019. R version 4.0.0 was used for
+this analysis.
 
 ### Reading the Dataset into R
 
@@ -503,60 +503,60 @@ summary(glht(res.aov, linfct = mcp(SPECIES = "Tukey")))
     ## Linear Hypotheses:
     ##                                      Estimate Std. Error t value Pr(>|t|)   
     ## C. distans - C. comosa == 0        -1.000e+01  5.429e+00  -1.842   0.7449   
-    ## E. cordatum - C. comosa == 0       -1.100e+01  5.429e+00  -2.026   0.6345   
+    ## E. cordatum - C. comosa == 0       -1.100e+01  5.429e+00  -2.026   0.6352   
     ## I. evansiana - C. comosa == 0      -1.000e+00  5.429e+00  -0.184   1.0000   
-    ## R. minima - C. comosa == 0         -1.800e+01  5.429e+00  -3.315   0.0849 . 
-    ## R. venulosa - C. comosa == 0       -1.200e+01  5.429e+00  -2.210   0.5208   
-    ## T. africanum - C. comosa == 0       8.000e+00  5.429e+00   1.474   0.9138   
-    ## T. krausiana - C. comosa == 0      -1.867e+01  5.429e+00  -3.438   0.0663 . 
-    ## T. repens - C. comosa == 0          8.000e+00  5.429e+00   1.474   0.9137   
-    ## V. unguiculata - C. comosa == 0    -1.600e+01  5.429e+00  -2.947   0.1701   
+    ## R. minima - C. comosa == 0         -1.800e+01  5.429e+00  -3.315   0.0846 . 
+    ## R. venulosa - C. comosa == 0       -1.200e+01  5.429e+00  -2.210   0.5213   
+    ## T. africanum - C. comosa == 0       8.000e+00  5.429e+00   1.474   0.9137   
+    ## T. krausiana - C. comosa == 0      -1.867e+01  5.429e+00  -3.438   0.0668 . 
+    ## T. repens - C. comosa == 0          8.000e+00  5.429e+00   1.474   0.9138   
+    ## V. unguiculata - C. comosa == 0    -1.600e+01  5.429e+00  -2.947   0.1709   
     ## Z. capensis - C. comosa == 0       -3.000e+00  5.429e+00  -0.553   1.0000   
     ## E. cordatum - C. distans == 0      -1.000e+00  5.429e+00  -0.184   1.0000   
     ## I. evansiana - C. distans == 0      9.000e+00  5.429e+00   1.658   0.8405   
-    ## R. minima - C. distans == 0        -8.000e+00  5.429e+00  -1.474   0.9137   
+    ## R. minima - C. distans == 0        -8.000e+00  5.429e+00  -1.474   0.9138   
     ## R. venulosa - C. distans == 0      -2.000e+00  5.429e+00  -0.368   1.0000   
-    ## T. africanum - C. distans == 0      1.800e+01  5.429e+00   3.315   0.0855 . 
-    ## T. krausiana - C. distans == 0     -8.667e+00  5.429e+00  -1.596   0.8679   
-    ## T. repens - C. distans == 0         1.800e+01  5.429e+00   3.315   0.0854 . 
-    ## V. unguiculata - C. distans == 0   -6.000e+00  5.429e+00  -1.105   0.9864   
+    ## T. africanum - C. distans == 0      1.800e+01  5.429e+00   3.315   0.0850 . 
+    ## T. krausiana - C. distans == 0     -8.667e+00  5.429e+00  -1.596   0.8682   
+    ## T. repens - C. distans == 0         1.800e+01  5.429e+00   3.315   0.0847 . 
+    ## V. unguiculata - C. distans == 0   -6.000e+00  5.429e+00  -1.105   0.9863   
     ## Z. capensis - C. distans == 0       7.000e+00  5.429e+00   1.289   0.9613   
     ## I. evansiana - E. cordatum == 0     1.000e+01  5.429e+00   1.842   0.7449   
-    ## R. minima - E. cordatum == 0       -7.000e+00  5.429e+00  -1.289   0.9612   
+    ## R. minima - E. cordatum == 0       -7.000e+00  5.429e+00  -1.289   0.9613   
     ## R. venulosa - E. cordatum == 0     -1.000e+00  5.429e+00  -0.184   1.0000   
-    ## T. africanum - E. cordatum == 0     1.900e+01  5.429e+00   3.500   0.0584 . 
-    ## T. krausiana - E. cordatum == 0    -7.667e+00  5.429e+00  -1.412   0.9323   
-    ## T. repens - E. cordatum == 0        1.900e+01  5.429e+00   3.500   0.0581 . 
+    ## T. africanum - E. cordatum == 0     1.900e+01  5.429e+00   3.500   0.0585 . 
+    ## T. krausiana - E. cordatum == 0    -7.667e+00  5.429e+00  -1.412   0.9325   
+    ## T. repens - E. cordatum == 0        1.900e+01  5.429e+00   3.500   0.0583 . 
     ## V. unguiculata - E. cordatum == 0  -5.000e+00  5.429e+00  -0.921   0.9966   
-    ## Z. capensis - E. cordatum == 0      8.000e+00  5.429e+00   1.474   0.9135   
-    ## R. minima - I. evansiana == 0      -1.700e+01  5.429e+00  -3.131   0.1213   
-    ## R. venulosa - I. evansiana == 0    -1.100e+01  5.429e+00  -2.026   0.6348   
-    ## T. africanum - I. evansiana == 0    9.000e+00  5.429e+00   1.658   0.8404   
-    ## T. krausiana - I. evansiana == 0   -1.767e+01  5.429e+00  -3.254   0.0958 . 
-    ## T. repens - I. evansiana == 0       9.000e+00  5.429e+00   1.658   0.8407   
-    ## V. unguiculata - I. evansiana == 0 -1.500e+01  5.429e+00  -2.763   0.2355   
+    ## Z. capensis - E. cordatum == 0      8.000e+00  5.429e+00   1.474   0.9136   
+    ## R. minima - I. evansiana == 0      -1.700e+01  5.429e+00  -3.131   0.1216   
+    ## R. venulosa - I. evansiana == 0    -1.100e+01  5.429e+00  -2.026   0.6347   
+    ## T. africanum - I. evansiana == 0    9.000e+00  5.429e+00   1.658   0.8407   
+    ## T. krausiana - I. evansiana == 0   -1.767e+01  5.429e+00  -3.254   0.0959 . 
+    ## T. repens - I. evansiana == 0       9.000e+00  5.429e+00   1.658   0.8405   
+    ## V. unguiculata - I. evansiana == 0 -1.500e+01  5.429e+00  -2.763   0.2353   
     ## Z. capensis - I. evansiana == 0    -2.000e+00  5.429e+00  -0.368   1.0000   
-    ## R. venulosa - R. minima == 0        6.000e+00  5.429e+00   1.105   0.9863   
+    ## R. venulosa - R. minima == 0        6.000e+00  5.429e+00   1.105   0.9864   
     ## T. africanum - R. minima == 0       2.600e+01  5.429e+00   4.789    <0.01 **
     ## T. krausiana - R. minima == 0      -6.667e-01  5.429e+00  -0.123   1.0000   
     ## T. repens - R. minima == 0          2.600e+01  5.429e+00   4.789    <0.01 **
     ## V. unguiculata - R. minima == 0     2.000e+00  5.429e+00   0.368   1.0000   
-    ## Z. capensis - R. minima == 0        1.500e+01  5.429e+00   2.763   0.2358   
-    ## T. africanum - R. venulosa == 0     2.000e+01  5.429e+00   3.684   0.0401 * 
-    ## T. krausiana - R. venulosa == 0    -6.667e+00  5.429e+00  -1.228   0.9717   
-    ## T. repens - R. venulosa == 0        2.000e+01  5.429e+00   3.684   0.0399 * 
+    ## Z. capensis - R. minima == 0        1.500e+01  5.429e+00   2.763   0.2354   
+    ## T. africanum - R. venulosa == 0     2.000e+01  5.429e+00   3.684   0.0397 * 
+    ## T. krausiana - R. venulosa == 0    -6.667e+00  5.429e+00  -1.228   0.9719   
+    ## T. repens - R. venulosa == 0        2.000e+01  5.429e+00   3.684   0.0397 * 
     ## V. unguiculata - R. venulosa == 0  -4.000e+00  5.429e+00  -0.737   0.9995   
-    ## Z. capensis - R. venulosa == 0      9.000e+00  5.429e+00   1.658   0.8405   
+    ## Z. capensis - R. venulosa == 0      9.000e+00  5.429e+00   1.658   0.8407   
     ## T. krausiana - T. africanum == 0   -2.667e+01  5.429e+00  -4.912    <0.01 **
     ## T. repens - T. africanum == 0       7.105e-15  5.429e+00   0.000   1.0000   
     ## V. unguiculata - T. africanum == 0 -2.400e+01  5.429e+00  -4.421    <0.01 **
-    ## Z. capensis - T. africanum == 0    -1.100e+01  5.429e+00  -2.026   0.6351   
+    ## Z. capensis - T. africanum == 0    -1.100e+01  5.429e+00  -2.026   0.6349   
     ## T. repens - T. krausiana == 0       2.667e+01  5.429e+00   4.912    <0.01 **
     ## V. unguiculata - T. krausiana == 0  2.667e+00  5.429e+00   0.491   1.0000   
-    ## Z. capensis - T. krausiana == 0     1.567e+01  5.429e+00   2.886   0.1908   
+    ## Z. capensis - T. krausiana == 0     1.567e+01  5.429e+00   2.886   0.1913   
     ## V. unguiculata - T. repens == 0    -2.400e+01  5.429e+00  -4.421    <0.01 **
-    ## Z. capensis - T. repens == 0       -1.100e+01  5.429e+00  -2.026   0.6351   
-    ## Z. capensis - V. unguiculata == 0   1.300e+01  5.429e+00   2.395   0.4118   
+    ## Z. capensis - T. repens == 0       -1.100e+01  5.429e+00  -2.026   0.6348   
+    ## Z. capensis - V. unguiculata == 0   1.300e+01  5.429e+00   2.395   0.4116   
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## (Adjusted p values reported -- single-step method)
@@ -610,46 +610,46 @@ summary(glht(res.aov2, linfct = mcp(SPECIES = "Tukey")))
     ## 
     ## Linear Hypotheses:
     ##                                    Estimate Std. Error t value Pr(>|t|)    
-    ## C. distans - C. comosa == 0        -10.6667     4.3993  -2.425   0.3949    
-    ## E. cordatum - C. comosa == 0       -14.6667     4.3993  -3.334   0.0819 .  
+    ## C. distans - C. comosa == 0        -10.6667     4.3993  -2.425   0.3957    
+    ## E. cordatum - C. comosa == 0       -14.6667     4.3993  -3.334   0.0821 .  
     ## I. evansiana - C. comosa == 0       -3.6667     4.3993  -0.833   0.9985    
     ## R. minima - C. comosa == 0         -16.0000     4.3993  -3.637   0.0438 *  
-    ## R. venulosa - C. comosa == 0       -13.3333     4.3993  -3.031   0.1468    
-    ## T. africanum - C. comosa == 0       14.6667     4.3993   3.334   0.0819 .  
-    ## T. krausiana - C. comosa == 0      -17.3333     4.3993  -3.940   0.0230 *  
-    ## T. repens - C. comosa == 0          16.0000     4.3993   3.637   0.0441 *  
+    ## R. venulosa - C. comosa == 0       -13.3333     4.3993  -3.031   0.1475    
+    ## T. africanum - C. comosa == 0       14.6667     4.3993   3.334   0.0824 .  
+    ## T. krausiana - C. comosa == 0      -17.3333     4.3993  -3.940   0.0229 *  
+    ## T. repens - C. comosa == 0          16.0000     4.3993   3.637   0.0444 *  
     ## V. unguiculata - C. comosa == 0    -13.6667     4.3993  -3.107   0.1282    
-    ## Z. capensis - C. comosa == 0        -8.3333     4.3993  -1.894   0.7147    
+    ## Z. capensis - C. comosa == 0        -8.3333     4.3993  -1.894   0.7151    
     ## E. cordatum - C. distans == 0       -4.0000     4.3993  -0.909   0.9969    
-    ## I. evansiana - C. distans == 0       7.0000     4.3993   1.591   0.8698    
+    ## I. evansiana - C. distans == 0       7.0000     4.3993   1.591   0.8701    
     ## R. minima - C. distans == 0         -5.3333     4.3993  -1.212   0.9741    
     ## R. venulosa - C. distans == 0       -2.6667     4.3993  -0.606   0.9999    
     ## T. africanum - C. distans == 0      25.3333     4.3993   5.759    <0.01 ***
-    ## T. krausiana - C. distans == 0      -6.6667     4.3993  -1.515   0.8996    
+    ## T. krausiana - C. distans == 0      -6.6667     4.3993  -1.515   0.8993    
     ## T. repens - C. distans == 0         26.6667     4.3993   6.062    <0.01 ***
     ## V. unguiculata - C. distans == 0    -3.0000     4.3993  -0.682   0.9997    
     ## Z. capensis - C. distans == 0        2.3333     4.3993   0.530   1.0000    
-    ## I. evansiana - E. cordatum == 0     11.0000     4.3993   2.500   0.3545    
+    ## I. evansiana - E. cordatum == 0     11.0000     4.3993   2.500   0.3552    
     ## R. minima - E. cordatum == 0        -1.3333     4.3993  -0.303   1.0000    
     ## R. venulosa - E. cordatum == 0       1.3333     4.3993   0.303   1.0000    
     ## T. africanum - E. cordatum == 0     29.3333     4.3993   6.668    <0.01 ***
     ## T. krausiana - E. cordatum == 0     -2.6667     4.3993  -0.606   0.9999    
     ## T. repens - E. cordatum == 0        30.6667     4.3993   6.971    <0.01 ***
     ## V. unguiculata - E. cordatum == 0    1.0000     4.3993   0.227   1.0000    
-    ## Z. capensis - E. cordatum == 0       6.3333     4.3993   1.440   0.9245    
-    ## R. minima - I. evansiana == 0      -12.3333     4.3993  -2.803   0.2193    
-    ## R. venulosa - I. evansiana == 0     -9.6667     4.3993  -2.197   0.5288    
-    ## T. africanum - I. evansiana == 0    18.3333     4.3993   4.167   0.0137 *  
-    ## T. krausiana - I. evansiana == 0   -13.6667     4.3993  -3.107   0.1277    
+    ## Z. capensis - E. cordatum == 0       6.3333     4.3993   1.440   0.9242    
+    ## R. minima - I. evansiana == 0      -12.3333     4.3993  -2.803   0.2205    
+    ## R. venulosa - I. evansiana == 0     -9.6667     4.3993  -2.197   0.5285    
+    ## T. africanum - I. evansiana == 0    18.3333     4.3993   4.167   0.0135 *  
+    ## T. krausiana - I. evansiana == 0   -13.6667     4.3993  -3.107   0.1270    
     ## T. repens - I. evansiana == 0       19.6667     4.3993   4.470    <0.01 ** 
-    ## V. unguiculata - I. evansiana == 0 -10.0000     4.3993  -2.273   0.4819    
+    ## V. unguiculata - I. evansiana == 0 -10.0000     4.3993  -2.273   0.4829    
     ## Z. capensis - I. evansiana == 0     -4.6667     4.3993  -1.061   0.9899    
     ## R. venulosa - R. minima == 0         2.6667     4.3993   0.606   0.9999    
     ## T. africanum - R. minima == 0       30.6667     4.3993   6.971    <0.01 ***
     ## T. krausiana - R. minima == 0       -1.3333     4.3993  -0.303   1.0000    
     ## T. repens - R. minima == 0          32.0000     4.3993   7.274    <0.01 ***
     ## V. unguiculata - R. minima == 0      2.3333     4.3993   0.530   1.0000    
-    ## Z. capensis - R. minima == 0         7.6667     4.3993   1.743   0.7988    
+    ## Z. capensis - R. minima == 0         7.6667     4.3993   1.743   0.7985    
     ## T. africanum - R. venulosa == 0     28.0000     4.3993   6.365    <0.01 ***
     ## T. krausiana - R. venulosa == 0     -4.0000     4.3993  -0.909   0.9969    
     ## T. repens - R. venulosa == 0        29.3333     4.3993   6.668    <0.01 ***
@@ -660,8 +660,8 @@ summary(glht(res.aov2, linfct = mcp(SPECIES = "Tukey")))
     ## V. unguiculata - T. africanum == 0 -28.3333     4.3993  -6.440    <0.01 ***
     ## Z. capensis - T. africanum == 0    -23.0000     4.3993  -5.228    <0.01 ** 
     ## T. repens - T. krausiana == 0       33.3333     4.3993   7.577    <0.01 ***
-    ## V. unguiculata - T. krausiana == 0   3.6667     4.3993   0.833   0.9985    
-    ## Z. capensis - T. krausiana == 0      9.0000     4.3993   2.046   0.6221    
+    ## V. unguiculata - T. krausiana == 0   3.6667     4.3993   0.833   0.9984    
+    ## Z. capensis - T. krausiana == 0      9.0000     4.3993   2.046   0.6223    
     ## V. unguiculata - T. repens == 0    -29.6667     4.3993  -6.744    <0.01 ***
     ## Z. capensis - T. repens == 0       -24.3333     4.3993  -5.531    <0.01 ***
     ## Z. capensis - V. unguiculata == 0    5.3333     4.3993   1.212   0.9741    
@@ -717,59 +717,59 @@ summary(glht(res.aov3, linfct = mcp(SPECIES = "Tukey")))
     ## Linear Hypotheses:
     ##                                      Estimate Std. Error t value Pr(>|t|)   
     ## C. distans - C. comosa == 0        -1.967e+01  5.084e+01  -0.387   1.0000   
-    ## E. cordatum - C. comosa == 0       -8.467e+01  5.084e+01  -1.665   0.8369   
+    ## E. cordatum - C. comosa == 0       -8.467e+01  5.084e+01  -1.665   0.8368   
     ## I. evansiana - C. comosa == 0      -5.667e+00  5.084e+01  -0.111   1.0000   
-    ## R. minima - C. comosa == 0         -4.733e+01  5.084e+01  -0.931   0.9963   
-    ## R. venulosa - C. comosa == 0       -7.200e+01  5.084e+01  -1.416   0.9310   
-    ## T. africanum - C. comosa == 0       1.143e+02  5.084e+01   2.249   0.4975   
+    ## R. minima - C. comosa == 0         -4.733e+01  5.084e+01  -0.931   0.9962   
+    ## R. venulosa - C. comosa == 0       -7.200e+01  5.084e+01  -1.416   0.9312   
+    ## T. africanum - C. comosa == 0       1.143e+02  5.084e+01   2.249   0.4977   
     ## T. krausiana - C. comosa == 0      -3.733e+01  5.084e+01  -0.734   0.9995   
-    ## T. repens - C. comosa == 0          1.587e+02  5.084e+01   3.121   0.1238   
+    ## T. repens - C. comosa == 0          1.587e+02  5.084e+01   3.121   0.1241   
     ## V. unguiculata - C. comosa == 0    -5.667e+00  5.084e+01  -0.111   1.0000   
     ## Z. capensis - C. comosa == 0        3.033e+01  5.084e+01   0.597   0.9999   
     ## E. cordatum - C. distans == 0      -6.500e+01  5.084e+01  -1.279   0.9633   
     ## I. evansiana - C. distans == 0      1.400e+01  5.084e+01   0.275   1.0000   
     ## R. minima - C. distans == 0        -2.767e+01  5.084e+01  -0.544   1.0000   
     ## R. venulosa - C. distans == 0      -5.233e+01  5.084e+01  -1.029   0.9919   
-    ## T. africanum - C. distans == 0      1.340e+02  5.084e+01   2.636   0.2892   
+    ## T. africanum - C. distans == 0      1.340e+02  5.084e+01   2.636   0.2889   
     ## T. krausiana - C. distans == 0     -1.767e+01  5.084e+01  -0.348   1.0000   
-    ## T. repens - C. distans == 0         1.783e+02  5.084e+01   3.508   0.0575 . 
+    ## T. repens - C. distans == 0         1.783e+02  5.084e+01   3.508   0.0580 . 
     ## V. unguiculata - C. distans == 0    1.400e+01  5.084e+01   0.275   1.0000   
     ## Z. capensis - C. distans == 0       5.000e+01  5.084e+01   0.984   0.9943   
-    ## I. evansiana - E. cordatum == 0     7.900e+01  5.084e+01   1.554   0.8848   
+    ## I. evansiana - E. cordatum == 0     7.900e+01  5.084e+01   1.554   0.8851   
     ## R. minima - E. cordatum == 0        3.733e+01  5.084e+01   0.734   0.9995   
     ## R. venulosa - E. cordatum == 0      1.267e+01  5.084e+01   0.249   1.0000   
-    ## T. africanum - E. cordatum == 0     1.990e+02  5.084e+01   3.914   0.0238 * 
-    ## T. krausiana - E. cordatum == 0     4.733e+01  5.084e+01   0.931   0.9963   
+    ## T. africanum - E. cordatum == 0     1.990e+02  5.084e+01   3.914   0.0240 * 
+    ## T. krausiana - E. cordatum == 0     4.733e+01  5.084e+01   0.931   0.9962   
     ## T. repens - E. cordatum == 0        2.433e+02  5.084e+01   4.786    <0.01 **
-    ## V. unguiculata - E. cordatum == 0   7.900e+01  5.084e+01   1.554   0.8851   
-    ## Z. capensis - E. cordatum == 0      1.150e+02  5.084e+01   2.262   0.4890   
+    ## V. unguiculata - E. cordatum == 0   7.900e+01  5.084e+01   1.554   0.8846   
+    ## Z. capensis - E. cordatum == 0      1.150e+02  5.084e+01   2.262   0.4897   
     ## R. minima - I. evansiana == 0      -4.167e+01  5.084e+01  -0.820   0.9987   
     ## R. venulosa - I. evansiana == 0    -6.633e+01  5.084e+01  -1.305   0.9582   
-    ## T. africanum - I. evansiana == 0    1.200e+02  5.084e+01   2.360   0.4310   
+    ## T. africanum - I. evansiana == 0    1.200e+02  5.084e+01   2.360   0.4317   
     ## T. krausiana - I. evansiana == 0   -3.167e+01  5.084e+01  -0.623   0.9999   
-    ## T. repens - I. evansiana == 0       1.643e+02  5.084e+01   3.232   0.1001   
+    ## T. repens - I. evansiana == 0       1.643e+02  5.084e+01   3.232   0.0996 . 
     ## V. unguiculata - I. evansiana == 0  3.464e-14  5.084e+01   0.000   1.0000   
     ## Z. capensis - I. evansiana == 0     3.600e+01  5.084e+01   0.708   0.9996   
     ## R. venulosa - R. minima == 0       -2.467e+01  5.084e+01  -0.485   1.0000   
-    ## T. africanum - R. minima == 0       1.617e+02  5.084e+01   3.180   0.1111   
+    ## T. africanum - R. minima == 0       1.617e+02  5.084e+01   3.180   0.1112   
     ## T. krausiana - R. minima == 0       1.000e+01  5.084e+01   0.197   1.0000   
-    ## T. repens - R. minima == 0          2.060e+02  5.084e+01   4.052   0.0181 * 
+    ## T. repens - R. minima == 0          2.060e+02  5.084e+01   4.052   0.0178 * 
     ## V. unguiculata - R. minima == 0     4.167e+01  5.084e+01   0.820   0.9987   
     ## Z. capensis - R. minima == 0        7.767e+01  5.084e+01   1.528   0.8949   
-    ## T. africanum - R. venulosa == 0     1.863e+02  5.084e+01   3.665   0.0412 * 
+    ## T. africanum - R. venulosa == 0     1.863e+02  5.084e+01   3.665   0.0416 * 
     ## T. krausiana - R. venulosa == 0     3.467e+01  5.084e+01   0.682   0.9997   
     ## T. repens - R. venulosa == 0        2.307e+02  5.084e+01   4.537    <0.01 **
-    ## V. unguiculata - R. venulosa == 0   6.633e+01  5.084e+01   1.305   0.9581   
-    ## Z. capensis - R. venulosa == 0      1.023e+02  5.084e+01   2.013   0.6427   
-    ## T. krausiana - T. africanum == 0   -1.517e+02  5.084e+01  -2.983   0.1603   
+    ## V. unguiculata - R. venulosa == 0   6.633e+01  5.084e+01   1.305   0.9582   
+    ## Z. capensis - R. venulosa == 0      1.023e+02  5.084e+01   2.013   0.6428   
+    ## T. krausiana - T. africanum == 0   -1.517e+02  5.084e+01  -2.983   0.1602   
     ## T. repens - T. africanum == 0       4.433e+01  5.084e+01   0.872   0.9978   
-    ## V. unguiculata - T. africanum == 0 -1.200e+02  5.084e+01  -2.360   0.4311   
-    ## Z. capensis - T. africanum == 0    -8.400e+01  5.084e+01  -1.652   0.8432   
-    ## T. repens - T. krausiana == 0       1.960e+02  5.084e+01   3.855   0.0277 * 
+    ## V. unguiculata - T. africanum == 0 -1.200e+02  5.084e+01  -2.360   0.4314   
+    ## Z. capensis - T. africanum == 0    -8.400e+01  5.084e+01  -1.652   0.8430   
+    ## T. repens - T. krausiana == 0       1.960e+02  5.084e+01   3.855   0.0275 * 
     ## V. unguiculata - T. krausiana == 0  3.167e+01  5.084e+01   0.623   0.9999   
-    ## Z. capensis - T. krausiana == 0     6.767e+01  5.084e+01   1.331   0.9526   
-    ## V. unguiculata - T. repens == 0    -1.643e+02  5.084e+01  -3.232   0.0996 . 
-    ## Z. capensis - T. repens == 0       -1.283e+02  5.084e+01  -2.524   0.3427   
+    ## Z. capensis - T. krausiana == 0     6.767e+01  5.084e+01   1.331   0.9527   
+    ## V. unguiculata - T. repens == 0    -1.643e+02  5.084e+01  -3.232   0.1002   
+    ## Z. capensis - T. repens == 0       -1.283e+02  5.084e+01  -2.524   0.3426   
     ## Z. capensis - V. unguiculata == 0   3.600e+01  5.084e+01   0.708   0.9996   
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -822,61 +822,61 @@ summary(glht(res.aov4, linfct = mcp(SPECIES = "Tukey")))
     ## 
     ## Linear Hypotheses:
     ##                                    Estimate Std. Error t value Pr(>|t|)    
-    ## C. distans - C. comosa == 0         -69.333     39.102  -1.773   0.7827    
-    ## E. cordatum - C. comosa == 0       -123.333     39.102  -3.154   0.1164    
-    ## I. evansiana - C. comosa == 0       -99.333     39.102  -2.540   0.3350    
-    ## R. minima - C. comosa == 0         -115.000     39.102  -2.941   0.1730    
-    ## R. venulosa - C. comosa == 0        -66.000     39.102  -1.688   0.8261    
-    ## T. africanum - C. comosa == 0        56.333     39.102   1.441   0.9243    
-    ## T. krausiana - C. comosa == 0       -18.333     39.102  -0.469   1.0000    
-    ## T. repens - C. comosa == 0          106.667     39.102   2.728   0.2493    
-    ## V. unguiculata - C. comosa == 0     -55.667     39.102  -1.424   0.9291    
-    ## Z. capensis - C. comosa == 0        -29.667     39.102  -0.759   0.9993    
-    ## E. cordatum - C. distans == 0       -54.000     39.102  -1.381   0.9408    
-    ## I. evansiana - C. distans == 0      -30.000     39.102  -0.767   0.9992    
-    ## R. minima - C. distans == 0         -45.667     39.102  -1.168   0.9799    
-    ## R. venulosa - C. distans == 0         3.333     39.102   0.085   1.0000    
-    ## T. africanum - C. distans == 0      125.667     39.102   3.214   0.1042    
-    ## T. krausiana - C. distans == 0       51.000     39.102   1.304   0.9583    
-    ## T. repens - C. distans == 0         176.000     39.102   4.501    <0.01 ** 
-    ## V. unguiculata - C. distans == 0     13.667     39.102   0.350   1.0000    
-    ## Z. capensis - C. distans == 0        39.667     39.102   1.014   0.9927    
-    ## I. evansiana - E. cordatum == 0      24.000     39.102   0.614   0.9999    
-    ## R. minima - E. cordatum == 0          8.333     39.102   0.213   1.0000    
-    ## R. venulosa - E. cordatum == 0       57.333     39.102   1.466   0.9162    
-    ## T. africanum - E. cordatum == 0     179.667     39.102   4.595    <0.01 ** 
-    ## T. krausiana - E. cordatum == 0     105.000     39.102   2.685   0.2668    
-    ## T. repens - E. cordatum == 0        230.000     39.102   5.882    <0.01 ***
-    ## V. unguiculata - E. cordatum == 0    67.667     39.102   1.731   0.8053    
-    ## Z. capensis - E. cordatum == 0       93.667     39.102   2.395   0.4114    
-    ## R. minima - I. evansiana == 0       -15.667     39.102  -0.401   1.0000    
-    ## R. venulosa - I. evansiana == 0      33.333     39.102   0.852   0.9982    
-    ## T. africanum - I. evansiana == 0    155.667     39.102   3.981   0.0211 *  
-    ## T. krausiana - I. evansiana == 0     81.000     39.102   2.072   0.6061    
-    ## T. repens - I. evansiana == 0       206.000     39.102   5.268    <0.01 ** 
-    ## V. unguiculata - I. evansiana == 0   43.667     39.102   1.117   0.9853    
-    ## Z. capensis - I. evansiana == 0      69.667     39.102   1.782   0.7783    
-    ## R. venulosa - R. minima == 0         49.000     39.102   1.253   0.9678    
-    ## T. africanum - R. minima == 0       171.333     39.102   4.382    <0.01 ** 
-    ## T. krausiana - R. minima == 0        96.667     39.102   2.472   0.3704    
-    ## T. repens - R. minima == 0          221.667     39.102   5.669    <0.01 ***
-    ## V. unguiculata - R. minima == 0      59.333     39.102   1.517   0.8986    
-    ## Z. capensis - R. minima == 0         85.333     39.102   2.182   0.5378    
-    ## T. africanum - R. venulosa == 0     122.333     39.102   3.129   0.1223    
-    ## T. krausiana - R. venulosa == 0      47.667     39.102   1.219   0.9730    
-    ## T. repens - R. venulosa == 0        172.667     39.102   4.416    <0.01 ** 
-    ## V. unguiculata - R. venulosa == 0    10.333     39.102   0.264   1.0000    
-    ## Z. capensis - R. venulosa == 0       36.333     39.102   0.929   0.9963    
-    ## T. krausiana - T. africanum == 0    -74.667     39.102  -1.910   0.7055    
-    ## T. repens - T. africanum == 0        50.333     39.102   1.287   0.9615    
-    ## V. unguiculata - T. africanum == 0 -112.000     39.102  -2.864   0.1976    
-    ## Z. capensis - T. africanum == 0     -86.000     39.102  -2.199   0.5276    
-    ## T. repens - T. krausiana == 0       125.000     39.102   3.197   0.1074    
-    ## V. unguiculata - T. krausiana == 0  -37.333     39.102  -0.955   0.9954    
-    ## Z. capensis - T. krausiana == 0     -11.333     39.102  -0.290   1.0000    
-    ## V. unguiculata - T. repens == 0    -162.333     39.102  -4.152   0.0147 *  
-    ## Z. capensis - T. repens == 0       -136.333     39.102  -3.487   0.0597 .  
-    ## Z. capensis - V. unguiculata == 0    26.000     39.102   0.665   0.9998    
+    ## C. distans - C. comosa == 0         -69.333     39.102  -1.773  0.78276    
+    ## E. cordatum - C. comosa == 0       -123.333     39.102  -3.154  0.11632    
+    ## I. evansiana - C. comosa == 0       -99.333     39.102  -2.540  0.33490    
+    ## R. minima - C. comosa == 0         -115.000     39.102  -2.941  0.17230    
+    ## R. venulosa - C. comosa == 0        -66.000     39.102  -1.688  0.82635    
+    ## T. africanum - C. comosa == 0        56.333     39.102   1.441  0.92411    
+    ## T. krausiana - C. comosa == 0       -18.333     39.102  -0.469  0.99999    
+    ## T. repens - C. comosa == 0          106.667     39.102   2.728  0.24984    
+    ## V. unguiculata - C. comosa == 0     -55.667     39.102  -1.424  0.92908    
+    ## Z. capensis - C. comosa == 0        -29.667     39.102  -0.759  0.99930    
+    ## E. cordatum - C. distans == 0       -54.000     39.102  -1.381  0.94085    
+    ## I. evansiana - C. distans == 0      -30.000     39.102  -0.767  0.99923    
+    ## R. minima - C. distans == 0         -45.667     39.102  -1.168  0.97986    
+    ## R. venulosa - C. distans == 0         3.333     39.102   0.085  1.00000    
+    ## T. africanum - C. distans == 0      125.667     39.102   3.214  0.10322    
+    ## T. krausiana - C. distans == 0       51.000     39.102   1.304  0.95824    
+    ## T. repens - C. distans == 0         176.000     39.102   4.501  0.00646 ** 
+    ## V. unguiculata - C. distans == 0     13.667     39.102   0.350  1.00000    
+    ## Z. capensis - C. distans == 0        39.667     39.102   1.014  0.99270    
+    ## I. evansiana - E. cordatum == 0      24.000     39.102   0.614  0.99989    
+    ## R. minima - E. cordatum == 0          8.333     39.102   0.213  1.00000    
+    ## R. venulosa - E. cordatum == 0       57.333     39.102   1.466  0.91605    
+    ## T. africanum - E. cordatum == 0     179.667     39.102   4.595  0.00516 ** 
+    ## T. krausiana - E. cordatum == 0     105.000     39.102   2.685  0.26732    
+    ## T. repens - E. cordatum == 0        230.000     39.102   5.882  < 0.001 ***
+    ## V. unguiculata - E. cordatum == 0    67.667     39.102   1.731  0.80502    
+    ## Z. capensis - E. cordatum == 0       93.667     39.102   2.395  0.41133    
+    ## R. minima - I. evansiana == 0       -15.667     39.102  -0.401  1.00000    
+    ## R. venulosa - I. evansiana == 0      33.333     39.102   0.852  0.99815    
+    ## T. africanum - I. evansiana == 0    155.667     39.102   3.981  0.02076 *  
+    ## T. krausiana - I. evansiana == 0     81.000     39.102   2.072  0.60608    
+    ## T. repens - I. evansiana == 0       206.000     39.102   5.268  0.00115 ** 
+    ## V. unguiculata - I. evansiana == 0   43.667     39.102   1.117  0.98527    
+    ## Z. capensis - I. evansiana == 0      69.667     39.102   1.782  0.77835    
+    ## R. venulosa - R. minima == 0         49.000     39.102   1.253  0.96767    
+    ## T. africanum - R. minima == 0       171.333     39.102   4.382  0.00865 ** 
+    ## T. krausiana - R. minima == 0        96.667     39.102   2.472  0.37078    
+    ## T. repens - R. minima == 0          221.667     39.102   5.669  < 0.001 ***
+    ## V. unguiculata - R. minima == 0      59.333     39.102   1.517  0.89860    
+    ## Z. capensis - R. minima == 0         85.333     39.102   2.182  0.53810    
+    ## T. africanum - R. venulosa == 0     122.333     39.102   3.129  0.12252    
+    ## T. krausiana - R. venulosa == 0      47.667     39.102   1.219  0.97306    
+    ## T. repens - R. venulosa == 0        172.667     39.102   4.416  0.00778 ** 
+    ## V. unguiculata - R. venulosa == 0    10.333     39.102   0.264  1.00000    
+    ## Z. capensis - R. venulosa == 0       36.333     39.102   0.929  0.99627    
+    ## T. krausiana - T. africanum == 0    -74.667     39.102  -1.910  0.70608    
+    ## T. repens - T. africanum == 0        50.333     39.102   1.287  0.96157    
+    ## V. unguiculata - T. africanum == 0 -112.000     39.102  -2.864  0.19763    
+    ## Z. capensis - T. africanum == 0     -86.000     39.102  -2.199  0.52716    
+    ## T. repens - T. krausiana == 0       125.000     39.102   3.197  0.10687    
+    ## V. unguiculata - T. krausiana == 0  -37.333     39.102  -0.955  0.99545    
+    ## Z. capensis - T. krausiana == 0     -11.333     39.102  -0.290  1.00000    
+    ## V. unguiculata - T. repens == 0    -162.333     39.102  -4.152  0.01451 *  
+    ## Z. capensis - T. repens == 0       -136.333     39.102  -3.487  0.05981 .  
+    ## Z. capensis - V. unguiculata == 0    26.000     39.102   0.665  0.99978    
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## (Adjusted p values reported -- single-step method)
